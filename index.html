@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Find Nearby ATMs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+		<!-- Link Main JavaScript File -->
+		<script src="./logic.js"></script>
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- Link Main CSS File -->
+		<link rel="stylesheet" href="./style.css">
+
+  </head>
+  <body>
+      <div class="sidebar">
+        <div class=" form-group text-center">
+          <h2 class="title" for="pac-input">Find Nearby ATMs</h2>
+          <input type="text" class="form-control" id="pac-input" placeholder="Found your location? Press Search!">
+          <button class="btn btn-success" onclick="searchPlace()">Search</button>
+          <br>
+          <a href="#" class="toggle-results">Show List View</a>
+          <br>
+        </div>
+        <div class="results">
+        </div>
+      </div>
+      <div id="map"></div>
+    <div class="search-btn">Search ATMs in another Location</div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHIBDBJadoV3dcxnbpbtxkGcpzs-8TIuc&libraries=places"></script>
+  </body>
+</html>
